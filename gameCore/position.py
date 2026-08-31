@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.insert(1, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from bitboard import Bitboard as BT
 from constants import *
 
@@ -24,6 +27,7 @@ class Position:
         self.enPassant = -1
         self.halfmoveClock = 0
         self.fullmoveClock = 0
+        self.hash = 0
 
     def clear(self):
         for i in range (12):

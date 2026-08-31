@@ -1,3 +1,7 @@
+import sys
+import os
+import sys
+sys.path.insert(1, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from constants import *
 from bitboard import Bitboard as BT
 
